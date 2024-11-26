@@ -1,0 +1,19 @@
+#tittle {
+    -fx-background-color: transparent; /* Ensure the background is transparent */
+    -fx-font-family: "Georgia", serif; /* Choose a beautiful, classic font */
+    -fx-font-size: 55px; /* Adjust font size as needed */
+    -fx-text-fill: linear-gradient(from 10% 10% to 100% 100%, blue, #a229ca, black); /* Gradient from blue to light blue to black */
+    -fx-font-weight: bold; /* Makes the text bold for emphasis */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 2); /* Add shadow effect */
+    -fx-padding: 10px; /* Add padding around the text */
+    -fx-alignment: center; /* Ensure the text is centered */
+}
+
+#tittle:hover {
+    -fx-text-fill: linear-gradient(from 10% 10% to 100% 100%, blue, #8613c8, black); /* Gradient from blue to light blue to black */
+    -fx-font-size: 60px; /* Slightly increase font size on hover */
+    -fx-effect: dropshadow(gaussian, #e8e8e8,0,0,0,0); /* Add stronger shadow effect on hover */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+    -fx-scale-x: 1.1; /* Slightly scale up horizontally */
+    -fx-scale-y: 1.1; /* Slightly scale up vertically */
+}

@@ -1,0 +1,16 @@
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 2); /* Add shadow effect */
+    -fx-scale-x: 1.1; /* Slight horizontal scale for clarity */
+    -fx-scale-y: 1.1; /* Slight vertical scale for clarity */
+    -fx-border-color: green; /* Add border */
+    -fx-border-width: 2; /* Border thickness */
+    -fx-border-radius: 10; /* Rounded border corners */
+    -fx-background-radius: 10; /* Match border rounding */
+}
+
+.image-view:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 128, 0, 0.8), 20, 0, 0, 2); /* Brighter shadow on hover */
+    -fx-scale-x: 1.15; /* Enlarge on hover */
+    -fx-scale-y: 1.15; /* Enlarge on hover */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}

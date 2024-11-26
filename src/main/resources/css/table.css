@@ -1,0 +1,36 @@
+/* Style for TableView */
+.table-view {
+    -fx-border-color: #0078d7;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-color: #f9f9f9;
+    -fx-padding: 5;
+}
+
+/* Style for TableView Header */
+.table-view .column-header {
+    -fx-background-color: #0078d7; /* Header background */
+    -fx-text-fill:  #0078d7;          /* Header text color */
+    -fx-font-weight: bold;
+}
+
+/* Style for TableView Rows */
+.table-view .cell {
+    -fx-padding: 10;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 1 0; /* Bottom border */
+}
+
+/* Hover effect for rows */
+.table-view .cell:hover {
+    -fx-background-color: #8ec7ff;
+}
+
+/* Alternate row colors */
+.table-row-cell:odd {
+    -fx-background-color: #f3f3f3;
+}
+
+.table-row-cell:even {
+    -fx-background-color: white;
+}

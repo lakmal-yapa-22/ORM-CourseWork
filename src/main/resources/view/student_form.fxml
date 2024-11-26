@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="studentPane" prefHeight="775.0" prefWidth="1242.0" style="-fx-background-color: #0693e3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Student_form">
+   <stylesheets>
+      <URL value="@../css/textFileld.css" />
+      <URL value="@../css/dashboard.css" />
+      <URL value="@../css/table.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutX="45.0" layoutY="42.0" prefHeight="706.0" prefWidth="1165.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+         <children>
+            <Button fx:id="clear_btn" layoutX="557.0" layoutY="355.0" mnemonicParsing="false" onAction="#Clear_on_Action" prefHeight="43.0" prefWidth="158.0" text="Clear">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8321702480316162" green="0.9368420839309692" blue="0.30881091952323914" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.829957127571106" green="0.8842105269432068" blue="0.41918128728866577" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <ImageView fitHeight="291.0" fitWidth="282.0" layoutX="857.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/images/dashBoard.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tblAllCourses" layoutX="912.0" layoutY="137.0" prefHeight="274.0" prefWidth="244.0">
+               <columns>
+                  <TableColumn fx:id="colStudent_ID" prefWidth="75.0" text="Student ID" />
+                  <TableColumn fx:id="col_Student_name" prefWidth="189.60000000000002" text="Student Name" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblStudent" layoutX="94.0" layoutY="461.0" prefHeight="274.0" prefWidth="781.0" style="-fx-border-radius: 15;">
+         <columns>
+            <TableColumn fx:id="col_S_ID" prefWidth="67.19998168945312" text="ID" />
+            <TableColumn fx:id="col_S_F_name" prefWidth="117.60002136230469" text="First Name" />
+            <TableColumn fx:id="col_L_name_OnAction" prefWidth="127.199951171875" text="Last Name" />
+            <TableColumn fx:id="col_s_Contact" prefWidth="147.20001220703125" text="Phone Number" />
+            <TableColumn fx:id="col_S_Email" prefWidth="157.5999755859375" text="Email" />
+            <TableColumn fx:id="col_Coor_Name" prefWidth="155.99996337890627" text="User ID" />
+         </columns>
+      </TableView>
+      <Button fx:id="save_btn" layoutX="93.0" layoutY="396.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="43.0" prefWidth="158.0" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="update_btn" layoutX="264.0" layoutY="396.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="43.0" prefWidth="147.0" text="Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2849954664707184" green="0.0862378180027008" blue="0.8315789699554443" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6141520738601685" green="0.6948245763778687" blue="0.9368420839309692" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="delete_btn" layoutX="423.0" layoutY="397.0" mnemonicParsing="false" onAction="#delete_onAction" prefHeight="43.0" prefWidth="158.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8421052694320679" green="0.08421052992343903" blue="0.08421052992343903" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9157894849777222" green="0.030526315793395042" blue="0.14856140315532684" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="txt_student_D" layoutX="89.0" layoutY="168.0" onAction="#txt_student_ID_onAction" prefHeight="32.0" prefWidth="326.0" promptText="student id ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_student_First_name" layoutX="89.0" layoutY="244.0" onAction="#txt_student_first_name_OnAction" prefHeight="32.0" prefWidth="326.0" promptText="Student First Name ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_student_last_name" layoutX="87.0" layoutY="323.0" onAction="#txt_student_last_name_OnAction" prefHeight="32.0" prefWidth="326.0" promptText="Student Last Name ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="120.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="111.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="111.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="514.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_student_Email" layoutX="490.0" layoutY="168.0" onAction="#txt_student_Email_OnAction" prefHeight="32.0" prefWidth="326.0" promptText="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="505.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="500.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cordinetor ID/Admin ID :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="tittle" layoutX="335.0" layoutY="47.0" text="Student">
+         <stylesheets>
+            <URL value="@../css/mainText.css" />
+            <URL value="@../css/mainText.css" />
+         </stylesheets>
+      </Label>
+      <TextField fx:id="txt_student_Contact" layoutX="487.0" layoutY="242.0" onAction="#txt_student_Contact_ONAction" prefHeight="32.0" prefWidth="326.0" promptText="student Phone Number ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="424.0" fitWidth="427.0" layoutX="704.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/team-signup.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cmb_Codinator_ID" layoutX="483.0" layoutY="324.0" onAction="#Cmb_Codinator_onAction" prefHeight="32.0" prefWidth="326.0" promptText="ID" />
+   </children>
+</AnchorPane>

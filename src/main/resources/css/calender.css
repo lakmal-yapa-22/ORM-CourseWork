@@ -1,0 +1,90 @@
+/* Style for the DatePicker container */
+.date-picker {
+    -fx-background-color: #f0f4f8;  /* Light gray background for the container */
+    -fx-border-radius: 10px;  /* Rounded corners */
+    -fx-border-color: #0693e3;  /* Blue border color */
+    -fx-border-width: 2px;  /* Border thickness */
+    -fx-padding: 10px;
+}
+
+/* Style for the text field part of DatePicker */
+.date-picker .text-field {
+    -fx-background-color: #ffffff;  /* White background for the text field */
+    -fx-border-radius: 8px;  /* Slightly rounded corners for the text field */
+    -fx-border-color: #0693e3;  /* Blue border color */
+    -fx-border-width: 1px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;  /* Dark text color */
+    -fx-padding: 5px 10px;  /* Padding inside the text field */
+}
+
+/* Style for the button (calendar icon) */
+.date-picker .button {
+    -fx-background-color: #0693e3;  /* Blue background for the button */
+    -fx-text-fill: white;  /* White text color */
+    -fx-border-radius: 8px;  /* Rounded corners for the button */
+    -fx-padding: 6px 12px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;  /* Hand cursor when hovering over the button */
+}
+
+/* Button hover effect */
+.date-picker .button:hover {
+    -fx-background-color: #0478b5;  /* Slightly darker blue on hover */
+}
+
+/* Style for the calendar cells */
+.date-picker .cell {
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;  /* White background for the cells */
+    -fx-border-color: #0693e3;
+    -fx-border-width: 1px;
+    -fx-text-fill: #333333;  /* Dark text for days */
+    -fx-padding: 5px;
+}
+
+/* Hover effect for calendar cells */
+.date-picker .cell:hover {
+    -fx-background-color: #b3d9f2;  /* Light blue background on hover */
+    -fx-border-color: #0693e3;  /* Blue border on hover */
+}
+
+/* Focus effect for the selected day */
+.date-picker .cell:focused {
+    -fx-background-color: #0693e3;  /* Blue background when focused */
+    -fx-text-fill: white;  /* White text when focused */
+}
+
+/* Style for the selected day */
+.date-picker .cell:selected {
+    -fx-background-color: #0693e3;  /* Blue background for selected day */
+    -fx-text-fill: white;  /* White text for the selected day */
+}
+
+/* Style for the popup calendar (overlay) */
+.date-picker .popup {
+    -fx-background-color: #ffffff;  /* White background for the popup */
+    -fx-border-radius: 8px;  /* Rounded corners for the popup */
+    -fx-border-color: #0693e3;  /* Blue border for the popup */
+    -fx-border-width: 2px;
+}
+
+/* Calendar header style (Month, Year) */
+.date-picker .month-year-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0693e3;  /* Blue color for the month/year label */
+}
+
+/* Calendar navigation buttons (Previous/Next) */
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    /*-fx-text-fill: #0693e3;  !* Blue color for arrows *!*/
+    -fx-padding: 5px;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #0693e3;
+    -fx-text-fill: white;
+}

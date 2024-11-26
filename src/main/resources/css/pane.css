@@ -1,0 +1,22 @@
+/* Base style for AnchorPane */
+#paneStyle {
+    -fx-background-color: linear-gradient(to bottom, #f9f9f9, #e0e0e0); /* Light gradient background */
+    -fx-border-color: #0078d7;       /* Border color */
+    -fx-border-width: 2;            /* Border thickness */
+    -fx-border-radius: 10;          /* Rounded corners */
+    -fx-background-radius: 10;      /* Match border radius */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.3, 0, 0); /* Subtle shadow */
+    -fx-padding: 15;                /* Inner padding */
+    -fx-transition: all 0.3s ease-in-out; /* Smooth transitions */
+    -fx-scale-x: 1;                 /* Default scale */
+    -fx-scale-y: 1;                 /* Default scale */
+}
+
+/* Hover effect */
+#paneStyle:hover {
+    -fx-scale-x: 1.1;               /* Slightly enlarge horizontally */
+    -fx-scale-y: 1.1;               /* Slightly enlarge vertically */
+    -fx-border-color: #005bb5;      /* Darker border on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0.5, 0, 0); /* Stronger shadow */
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #d1e7ff); /* Subtle color change */
+}

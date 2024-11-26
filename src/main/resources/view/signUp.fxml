@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="775.0" prefWidth="1500.0" style="-fx-background-color: #0693e3;" stylesheets="@../css/textFileld.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SignUpOnAction">
+   <children>
+      <AnchorPane layoutX="785.0" prefHeight="775.0" prefWidth="715.0" style="-fx-background-color: #0693e3;" />
+      <AnchorPane layoutX="42.0" layoutY="38.0" prefHeight="700.0" prefWidth="1400.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-color: #2196F3; -fx-border-radius: 15;">
+         <children>
+            <TextField fx:id="txtUsername" layoutX="855.0" layoutY="168.0" prefHeight="38.0" prefWidth="344.0" promptText="    Username" style="-fx-background-radius: 10;" stylesheets="@../css/textFileld.css" />
+            <Button fx:id="btn" layoutX="976.0" layoutY="573.0" mnemonicParsing="false" onAction="#singn_uP_onAction" prefHeight="27.0" prefWidth="158.0" stylesheets="@../css/dashboard.css" text="Sign Up" textFill="#e7e9eaf7">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="cmbUserType" layoutX="856.0" layoutY="379.0" prefHeight="38.0" prefWidth="344.0" promptText="user Type" stylesheets="@../css/textFileld.css" />
+            <Button layoutX="955.0" layoutY="623.0" mnemonicParsing="false" onAction="#btnlogin__onClick" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: white;" text="Login" textFill="#0034ff">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Text layoutX="871.0" layoutY="656.0" strokeType="OUTSIDE" strokeWidth="0.0" text="you have already acount ?">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="txtPassword" layoutX="857.0" layoutY="237.0" prefHeight="38.0" prefWidth="344.0" promptText="    Password" style="-fx-background-radius: 10;" stylesheets="@../css/textFileld.css" />
+            <TextField fx:id="txtUserID" layoutX="855.0" layoutY="101.0" prefHeight="38.0" prefWidth="344.0" promptText="    User ID" style="-fx-background-radius: 10;" stylesheets="@../css/textFileld.css" />
+            <TextField fx:id="txtPassword1" layoutX="858.0" layoutY="306.0" prefHeight="38.0" prefWidth="344.0" promptText="   Re- Password" style="-fx-background-radius: 10;" stylesheets="@../css/textFileld.css" />
+            <TextField fx:id="txtEmail" layoutX="857.0" layoutY="449.0" prefHeight="38.0" prefWidth="344.0" promptText="    Email" style="-fx-background-radius: 10;" stylesheets="@../css/textFileld.css" />
+            <TextField fx:id="txtPhoneNumber" layoutX="857.0" layoutY="516.0" prefHeight="38.0" prefWidth="344.0" promptText="    Phone Number" style="-fx-background-radius: 10;" stylesheets="@../css/textFileld.css" />
+            <Label fx:id="tittle" layoutX="614.0" layoutY="44.0" stylesheets="@../css/mainText.css" text="Sign up">
+               <font>
+                  <Font name="SansSerif Bold" size="45.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="654.0" fitWidth="880.0" layoutX="53.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/images/team-signup.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="631.0" fitWidth="644.0" layoutX="406.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/program.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

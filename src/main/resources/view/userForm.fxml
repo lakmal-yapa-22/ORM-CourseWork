@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="userPane" prefHeight="775.0" prefWidth="1242.0" style="-fx-background-color: #0693e3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserF0rmController">
+   <children>
+      <Text layoutX="75.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.2395833333333334">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.24210526049137115" green="0.19368420541286469" blue="0.19368420541286469" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <AnchorPane layoutX="45.0" layoutY="42.0" prefHeight="706.0" prefWidth="1165.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+         <children>
+            <Button fx:id="save_btn" layoutX="113.0" layoutY="357.0" mnemonicParsing="false" onAction="#btn_Save_onClick" prefHeight="32.0" prefWidth="104.0" text="Save">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.68678879737854" green="0.9263157844543457" blue="0.6827290654182434" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.035555556416511536" green="0.6000000238418579" blue="0.3554074168205261" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="update_btn" layoutX="228.0" layoutY="359.0" mnemonicParsing="false" onAction="#btn_Update_onClick" prefHeight="43.0" prefWidth="116.0" text="Update">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6808000206947327" green="0.7296720743179321" blue="0.9200000166893005" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.15508772432804108" green="0.07290448248386383" blue="0.8947368264198303" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="delete_btn" layoutX="358.0" layoutY="360.0" mnemonicParsing="false" onAction="#btn_Delete_onClick" prefHeight="43.0" prefWidth="116.0" text="Delete">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9052631855010986" green="0.5880857706069946" blue="0.4727485477924347" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9578947424888611" green="0.5782846212387085" blue="0.5782846212387085" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <ImageView fitHeight="316.0" fitWidth="305.0" layoutX="841.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/gif/dash1.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="266.0" fitWidth="221.0" layoutX="642.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/images/team-signup.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="360.0" fitWidth="221.0" layoutX="929.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/images/dashboard2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblCoordinator" layoutX="102.0" layoutY="470.0" prefHeight="218.0" prefWidth="854.0" style="-fx-border-radius: 15;">
+         <columns>
+            <TableColumn fx:id="col_Coordinator_ID" prefWidth="83.9999771118164" text="ID" />
+            <TableColumn fx:id="col_Name" prefWidth="122.4000244140625" text="Name" />
+            <TableColumn fx:id="col_Password" prefWidth="152.00006103515625" text="Password" />
+            <TableColumn fx:id="col_userRole" prefWidth="139.20004272460938" text="user Role" />
+            <TableColumn fx:id="col_ContactNumber" prefWidth="171.199951171875" text="Contact" />
+            <TableColumn fx:id="col_Email_Address" prefWidth="174.39996337890625" text="Email" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtUserID" layoutX="137.0" layoutY="174.0" onAction="#txtUserID_onAction" prefHeight="32.0" prefWidth="326.0" promptText="Coordinator ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUser_name" layoutX="137.0" layoutY="254.0" onAction="#txtUser_name_onAction" prefHeight="32.0" prefWidth="326.0" promptText="Coordinator Name ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_password" layoutX="135.0" layoutY="332.0" onAction="#txt_password_onAction" prefHeight="32.0" prefWidth="326.0" promptText="Coordinator Password ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="552.0" layoutY="163.0" onAction="#txtContact_onAction" prefHeight="32.0" prefWidth="326.0" promptText="Coordinator Contact Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="157.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinator  ID :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="159.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinator Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="159.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinator Password :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="576.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinator Contact Number :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmail" layoutX="550.0" layoutY="242.0" onAction="#txtEmailAddress_onAction" prefHeight="32.0" prefWidth="326.0" promptText="Coordinator Email Address :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="574.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinator Email:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="clear_btn" layoutX="532.0" layoutY="401.0" mnemonicParsing="false" onAction="#btn_clear_onClick" prefHeight="43.0" prefWidth="123.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9617257714271545" green="0.9684210419654846" blue="0.5667056441307068" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8403742909431458" green="0.9263157844543457" blue="0.3533723056316376" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label fx:id="tittle" layoutX="365.0" layoutY="56.0" text="Coordinator ">
+         <stylesheets>
+            <URL value="@../css/mainText.css" />
+            <URL value="@../css/mainText.css" />
+         </stylesheets>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../css/table.css" />
+      <URL value="@../css/textFileld.css" />
+      <URL value="@../css/dashboard.css" />
+   </stylesheets>
+</AnchorPane>

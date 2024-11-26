@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="program_root" prefHeight="775.0" prefWidth="1242.0" style="-fx-background-color: #0693e3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Program_controller">
+   <children>
+      <Text layoutX="83.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.2395833333333334">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.24210526049137115" green="0.19368420541286469" blue="0.19368420541286469" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <AnchorPane layoutX="45.0" layoutY="42.0" prefHeight="706.0" prefWidth="1165.0" style="-fx-background-color: white; -fx-background-radius: 15px;">
+         <children>
+            <ImageView fitHeight="324.0" fitWidth="302.0" layoutX="805.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/images/registr-st.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="310.0" fitWidth="315.0" layoutX="844.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/images/program.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="save_btn" layoutX="60.0" layoutY="316.0" mnemonicParsing="false" onAction="#btn_save_on_action" prefHeight="32.0" prefWidth="104.0" text="Save">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.68678879737854" green="0.9263157844543457" blue="0.6827290654182434" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.035555556416511536" green="0.6000000238418579" blue="0.3554074168205261" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="update_btn" layoutX="180.0" layoutY="315.0" mnemonicParsing="false" onAction="#btn_update_onAction" prefHeight="43.0" prefWidth="130.0" text="Update">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6808000206947327" green="0.7296720743179321" blue="0.9200000166893005" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.15508772432804108" green="0.07290448248386383" blue="0.8947368264198303" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="delete_btn" layoutX="328.0" layoutY="315.0" mnemonicParsing="false" onAction="#btn_delete_onAction" prefHeight="43.0" prefWidth="129.0" text="Delete">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9052631855010986" green="0.5880857706069946" blue="0.4727485477924347" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9578947424888611" green="0.5782846212387085" blue="0.5782846212387085" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblProgram" layoutX="73.0" layoutY="417.0" prefHeight="302.0" prefWidth="824.0" style="-fx-border-radius: 15;">
+         <columns>
+            <TableColumn fx:id="col_program_iD" prefWidth="147.20000839233398" text="Program ID" />
+            <TableColumn fx:id="col_program_name" prefWidth="252.79998779296875" text="Program name" />
+            <TableColumn fx:id="col_program_duration" prefWidth="208.79998779296875" text="Duration" />
+            <TableColumn fx:id="col_program_fee" prefWidth="211.20001220703125" text="Fee (LKR)" />
+         </columns>
+      </TableView>
+      <Button fx:id="clear_btn" layoutX="517.0" layoutY="357.0" mnemonicParsing="false" onAction="#btn_clear_onAction" prefHeight="43.0" prefWidth="146.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9617257714271545" green="0.9684210419654846" blue="0.5667056441307068" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8403742909431458" green="0.9263157844543457" blue="0.3533723056316376" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label fx:id="tittle" layoutX="355.0" layoutY="46.0" text="Program">
+         <stylesheets>
+            <URL value="@../css/mainText.css" />
+            <URL value="@../css/mainText.css" />
+         </stylesheets>
+      </Label>
+      <TextField fx:id="txt_program_id" layoutX="111.0" layoutY="179.0" prefHeight="32.0" prefWidth="326.0" promptText="program id ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_Program_fee" layoutX="490.0" layoutY="282.0" prefHeight="32.0" prefWidth="326.0" promptText="course fee ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="129.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program ID :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="134.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="512.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fee (LKR):">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDuration" layoutX="490.0" layoutY="181.0" prefHeight="32.0" prefWidth="326.0" promptText="Duration">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="493.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbProgramName" layoutX="110.0" layoutY="283.0" prefHeight="32.0" prefWidth="326.0" promptText="Program Name " />
+   </children>
+   <stylesheets>
+      <URL value="@../css/table.css" />
+      <URL value="@../css/dashboard.css" />
+      <URL value="@../css/textFileld.css" />
+   </stylesheets>
+</AnchorPane>

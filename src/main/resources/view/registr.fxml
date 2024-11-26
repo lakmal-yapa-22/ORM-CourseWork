@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="registrPane" prefHeight="775.0" prefWidth="1242.0" style="-fx-background-color: #0693e3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegistrController">
+   <children>
+      <AnchorPane layoutX="45.0" layoutY="42.0" prefHeight="706.0" prefWidth="1165.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+         <stylesheets>
+            <URL value="@../css/dashboard.css" />
+            <URL value="@../css/textFileld.css" />
+            <URL value="@../css/table.css" />
+         </stylesheets>
+         <children>
+            <Button fx:id="delete_btn" layoutX="438.0" layoutY="378.0" mnemonicParsing="false" onAction="#btn_delete_onAction" prefHeight="43.0" prefWidth="130.0" text="Delete" textFill="#e11414">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="update_btn" layoutX="274.0" layoutY="378.0" mnemonicParsing="false" onAction="#btn_update_onAction" prefHeight="43.0" prefWidth="148.0" text="Update">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.03929824382066727" green="0.4105730950832367" blue="0.75789475440979" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.19368420541286469" green="0.3228070139884949" blue="0.9684210419654846" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <ImageView fitHeight="252.0" fitWidth="442.0" layoutX="715.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/image/download%20(21).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="clear_btn" layoutX="586.0" layoutY="377.0" mnemonicParsing="false" onAction="#btn_clear_onAction" prefHeight="43.0" prefWidth="129.0" text="Clear" textFill="#c8f210">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="224.0" fitWidth="301.0" layoutX="836.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/image/images%20(21)%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="206.0" fitWidth="279.0" layoutX="829.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/gif/dash1.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tbl_registr" layoutX="130.0" layoutY="475.0" prefHeight="244.0" prefWidth="706.0" style="-fx-border-radius: 15;">
+         <columns>
+            <TableColumn fx:id="col_registr_id" prefWidth="130.3999900817871" text="Registr ID" />
+            <TableColumn fx:id="col_student_id" prefWidth="139.2000274658203" text="Student ID" />
+            <TableColumn fx:id="col_program_id" prefWidth="140.7999267578125" text="program ID" />
+            <TableColumn fx:id="col_registr_fee" prefWidth="143.20001220703125" text="Registr fee" />
+            <TableColumn fx:id="col_registr_date" prefWidth="149.60003662109375" text="Registr Date" />
+         </columns>
+      </TableView>
+      <Button fx:id="save_btn" layoutX="216.0" layoutY="419.0" mnemonicParsing="false" onAction="#btn_save_onAction" prefHeight="32.0" prefWidth="89.0" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.04210526496171951" green="0.9473684430122375" blue="0.5400000214576721" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5677660703659058" green="0.8631578683853149" blue="0.4411695897579193" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="txt_registr_id" layoutX="139.0" layoutY="169.0" prefHeight="32.0" prefWidth="326.0" promptText="Registr id ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_registr_fee" layoutX="520.0" layoutY="166.0" prefHeight="32.0" prefWidth="326.0" promptText="Registr Fee">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="159.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registr ID :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="546.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registr Date :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="544.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registr fee :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="167.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="txt_reg_date" layoutX="520.0" layoutY="251.0" prefHeight="32.0" prefWidth="326.0" promptText="Registr Date " />
+      <ComboBox fx:id="cmb_student_id" layoutX="140.0" layoutY="242.0" prefHeight="32.0" prefWidth="326.0" promptText="Student ID" />
+      <Text layoutX="164.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program ID:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmb_program_id" layoutX="137.0" layoutY="316.0" prefHeight="32.0" prefWidth="326.0" promptText="Program ID" />
+      <Label fx:id="tittle" layoutX="345.0" layoutY="57.0" text="Registration">
+         <stylesheets>
+            <URL value="@../css/mainText.css" />
+            <URL value="@../css/mainText.css" />
+         </stylesheets>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../css/table.css" />
+      <URL value="@../css/textFileld.css" />
+      <URL value="@../css/calender.css" />
+      <URL value="@../css/dashboard.css" />
+   </stylesheets>
+</AnchorPane>

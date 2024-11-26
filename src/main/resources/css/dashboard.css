@@ -1,0 +1,96 @@
+#btn:hover{
+    -fx-background-color: #0693e3;
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color:linear-gradient(to bottom, #ffffff, #ffffff);  /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#btn{
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color:  #0693e3; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#btn1:hover{
+    -fx-background-color: #0693e3;
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color:linear-gradient(to bottom, #ffffff, #ffffff);  /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#btn1{
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color:  linear-gradient(to bottom, #ffffff, #ffffff); /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#save_btn{
+    -fx-background-color: green;
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: green; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#save_btn:hover{
+    -fx-background-color:linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: #0693e3  ; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#update_btn{
+    -fx-background-color: blue;
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color:blue;  /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#update_btn:hover{
+    -fx-background-color:linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: #0693e3  ; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#delete_btn{
+    -fx-background-color: red;
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color:red;  /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#delete_btn:hover{
+    -fx-background-color:linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: #0693e3  ; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#clear_btn{
+    -fx-background-color:yellow;
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: yellow;  /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}
+#clear_btn:hover{
+    -fx-background-color:linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: #0693e3  ; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+}

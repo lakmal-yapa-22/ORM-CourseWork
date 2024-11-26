@@ -1,0 +1,62 @@
+.text-field {
+    -fx-background-color: white; /* Background color */
+    -fx-border-color: green; /* Border color */
+    -fx-border-width: 2; /* Border thickness */
+    -fx-border-radius: 10; /* Rounded border */
+    -fx-background-radius: 10; /* Match border rounding */
+    -fx-padding: 10; /* Padding inside TextField */
+    -fx-prompt-text-fill: #6a9e6b; /* Light green prompt text color */
+    -fx-font-size: 14px; /* Font size for text and prompt */
+    -fx-text-fill: black; /* Input text color */
+}
+
+.text-field:focused {
+    -fx-border-color: darkgreen; /* Darker green when focused */
+    -fx-prompt-text-fill: transparent; /* Hide prompt text when typing */
+}
+
+.text-field .text {
+    -fx-translate-y: -5px; /* Slight upward movement for entered text */
+}
+
+.text-field:focused .text {
+    -fx-translate-y: -5px; /* Ensure text stays aligned when focused */
+}
+
+.text-field:focused .prompt-text {
+    -fx-translate-y: -25px; /* Move prompt text upwards when focused */
+    -fx-font-size: 12px; /* Reduce size for prompt when moved up */
+    -fx-text-fill: darkgreen; /* Stylish dark green for moved prompt text */
+}
+.combo-box {
+    -fx-border-color: green; /* Border color */
+    -fx-border-width: 2; /* Border thickness */
+    -fx-border-radius: 10; /* Rounded border */
+    -fx-background-radius: 10; /* Match border rounding */
+    -fx-background-color: white; /* Background color */
+    -fx-padding: 5; /* Padding inside ComboBox */
+    -fx-font-size: 14px; /* Font size for text */
+    -fx-text-fill: black; /* Text color */
+}
+
+.combo-box .arrow {
+    -fx-background-color: green; /* Arrow background color */
+    -fx-padding: 5; /* Arrow padding */
+    -fx-shape: "M 0 0 L 4 4 L 8 0 Z"; /* Custom arrow shape */
+}
+
+.combo-box:hover {
+    -fx-border-color: darkgreen; /* Darker green border on hover */
+    -fx-background-color: #f3fff3; /* Light green background on hover */
+}
+
+.combo-box .list-cell {
+    -fx-background-color: white; /* Dropdown item background */
+    -fx-text-fill: black; /* Dropdown item text color */
+    -fx-font-size: 14px; /* Font size for dropdown items */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #c0ffc0; /* Light green hover color for items */
+    -fx-text-fill: darkgreen; /* Hover text color */
+}
